@@ -1,0 +1,477 @@
+*{
+	overflow: hidden;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+
+html, body {
+	height: 100%;
+	width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	background-image: url('imagenes/juego/fondo.png');
+	background-size: 100% 100%;
+}
+
+#cargando{
+	background-image: url('imagenes/inicio/fondo.jpg');
+	background-size: 100% 100%;
+	z-index: 10;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#contenedor{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+/*#personaje{
+	position: absolute;
+	background-image: url('imagenes/juego/zorro.png');
+	background-size: 100% 100%;
+}*/
+
+#textoCarga{
+	position: absolute;
+	font-family: GillSans;
+	color: #245381;
+}
+
+#imagenCarga{
+	position: absolute;
+	background-image: url('imagenes/instrucciones/ins01.png');
+	background-size: 100% 100%;
+}
+
+#caja1{
+	position: absolute;
+	top: 15%;
+	left: -40%;
+	background-image: url('imagenes/juego/pez01.png');
+	background-size: 100% 100%;
+}
+#caja2{
+	position: absolute;
+	top: 25%;
+	left: -40%;
+	background-image: url('imagenes/juego/pez02.png');
+	background-size: 100% 100%;
+}
+#caja3{
+	position: absolute;
+	top: 35%;
+	left: -40%;
+	background-image: url('imagenes/juego/pez03.png');
+	background-size: 100% 100%;
+}
+#caja4{
+	position: absolute;
+	top: 45%;
+	left: -40%;
+	background-image: url('imagenes/juego/pez04.png');
+	background-size: 100% 100%;
+}
+#caja5{
+	position: absolute;
+	top: 55%;
+	left: -40%;
+	background-image: url('imagenes/juego/pez05.png');
+	background-size: 100% 100%;
+}
+#caja6{
+	position: absolute;
+	top: 65%;
+	left: -40%;
+	background-image: url('imagenes/juego/pez06.png');
+	background-size: 100% 100%;
+}
+#caja7{
+	position: absolute;
+	top: 80%;
+	left: -40%;
+	background-image: url('imagenes/juego/pez07.png');
+	background-size: 100% 100%;
+}
+/*#lateral_izq{
+	position: absolute;
+	left: 0%;
+	width: 30%;
+	background-image: url('imagenes/juego/lateral01.png');
+	background-size: 100% 100%;
+}
+#lateral_der{
+	position: absolute;
+	left: 70%;
+	width: 30%;
+	background-image: url('imagenes/juego/lateral02.png');
+	background-size: 100% 100%;
+}
+#cabecera{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 30%;
+	background-image: url('imagenes/juego/cabecera.png');
+	background-size: 100% 100%;
+}
+*/
+#telon{
+	position: absolute;
+	top: -100%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-image: url('imagenes/juego/telon.png');
+	background-size: 100% 100%;
+}
+#reloj{
+	position: absolute;
+	top: 0;
+	background-image: url('imagenes/juego/reloj.png');
+	background-size: 100% 100%;
+}
+#logo1{
+	position: absolute;
+	background-image: url('imagenes/juego/logo1.png');
+	background-size: 100% 100%;
+}
+#logo2{
+	position: absolute;
+	background-image: url('imagenes/juego/logo2.png');
+	background-size: 100% 100%;
+}
+
+#btnCompartir{
+	position: absolute;
+	background-image: url('imagenes/juego/compartir.png');
+	background-size: 100% 100%;
+	opacity: 1;
+	display: none;
+}
+#btnVolver{
+	position: absolute;
+	background-image: url('imagenes/juego/volver.png');
+	background-size: 100% 100%;
+	opacity: 1;
+	display: none;
+}
+#btnRegistrar{
+	position: absolute;
+	background-image: url('imagenes/juego/registro.png');
+	background-size: 100% 100%;
+	opacity: 1;
+	display: none;
+}
+#btnCompartir:hover, #btnVolver:hover, 
+#btnRegistrar:hover{
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+/*#izqcopo{
+	position: absolute;
+	background-image: url('imagenes/juego/izqcopo.png');
+	background-size: 100% 100%;
+	opacity: 0;
+}
+#dercopo{
+	position: absolute;
+	background-image: url('imagenes/juego/puntos.png');
+	background-size: 100% 100%;
+	opacity: 0;
+}*/
+
+#btnMusica{
+	position: absolute;
+	background-image: url('imagenes/juego/musicastop.png');
+	background-size: 100% 100%;
+}
+
+#btnMusica:hover{
+	cursor: pointer;
+}
+
+#segundos{
+	position: absolute;
+	font-family: GillSans;
+	color: white;
+}
+#puntaje{
+	position: absolute;
+	font-family: GillSans;
+	color: #b51c68;
+}
+#mejor{
+	position: absolute;
+	font-family: GillSans;
+	color: #b51c68;
+	display: none;
+}
+#texto{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-image: url('./imagenes/juego/puntaje_30.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	opacity: 0;
+	display: none;
+}
+
+#puntajeFinal{
+	position: absolute;
+	font-family: GillSans;
+	color: #37bde9;
+	opacity: 0;
+	z-index: 2;
+	display: none;
+	
+}
+#puntajeLogo{
+	position: absolute;
+	font-family: GillSans;
+	color: white;
+	opacity: 0;
+	background-image: url('./imagenes/juego/puntos.png');
+	background-size: 100% 100%;
+	z-index: 1;
+	display: none;
+}
+#texto01{
+	position: absolute;
+	font-family: GillSans;
+	color: white;
+	opacity: 0;
+}		
+
+#btn_derecha{
+	position: absolute;
+	top: 50%;
+	left: 90%;
+	background-image: url('imagenes/juego/btn_der.png');
+	background-size: 100% 100%;
+	display: none;
+}
+
+#btn_izquierda{
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	background-image: url('imagenes/juego/btn_izq.png');
+	background-size: 100% 100%;
+	display: none;
+}
+
+#btn_derecha{
+	position: absolute;
+	top: 50%;
+	right: 0%;
+	background-image: url('imagenes/juego/btn_der.png');
+	background-size: 100% 100%;
+	display: none;
+}
+
+#btn_izquierda{
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	background-image: url('imagenes/juego/btn_izq.png');
+	background-size: 100% 100%;
+	display: none;
+}
+
+#derecha{
+	position: absolute;
+	top: 40%;
+	right: 0%;
+	background-color: #fff;
+	display: none;
+	opacity: 0;
+}
+
+#izquierda{
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	background-color: #fff;
+	display: none;
+	opacity: 0;
+}
+
+/*#zorro{
+	background-image: url('imagenes/juego/zorro02.png');
+	opacity: 0;
+}*/
+
+.mover{
+	animation-duration:4s;
+	animation-name: mover;
+	animation-timing-function: linear;
+
+	-webkit-animation-duration:4s;
+	-webkit-animation-name: mover;
+	-webkit-animation-timing-function: linear;
+
+	-moz-animation-duration:4s;
+	-moz-animation-name: mover;
+	-moz-animation-timing-function: linear;
+}
+
+@keyframes mover{
+	from{
+		left: -20%;
+	}
+	to{
+		left: 110%;
+	}
+}
+
+@-webkit-keyframes mover{
+	from{
+		left: -20%;
+	}
+	to{
+		left: 110%;
+	}
+}
+
+@-moz-keyframes mover{
+	from{
+		left: -20%;
+	}
+	to{
+		left: 110%;
+	}
+}
+
+.desaparecer{
+	animation-duration:0.5s;
+	animation-name: desaparecer;
+	animation-timing-function: linear;
+
+	-webkit-animation-duration:0.5s;
+	-webkit-animation-name: desaparecer;
+	-webkit-animation-timing-function: linear;
+}
+
+@keyframes desaparecer{
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes desaparecer{
+	from{
+		-webkit-opacity: 1;
+	}
+	to{
+		-webkit-opacity: 0;
+	}
+}
+
+.aparecer{
+	animation-duration:1s;
+	animation-name: aparecer;
+	animation-timing-function: linear;
+	-webkit-animation-duration:1s;
+	-webkit-animation-name: aparecer;
+	-webkit-animation-timing-function: linear;
+}
+
+@keyframes aparecer{
+	from{
+		display: block;
+		opacity: 0;
+	}
+	to{
+		display: block;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes aparecer{
+	from{
+		-webkit-display: block;
+		-webkit-opacity: 0;
+	}
+	to{
+		-webkit-display: block;
+		-webkit-opacity: 1;
+	}
+}
+.bajar{
+	animation-duration:0.5s;
+	animation-name: bajar;
+	animation-timing-function: linear;
+
+	-webkit-animation-duration:0.5s;
+	-webkit-animation-name: bajar;
+	-webkit-animation-timing-function: linear;
+}
+
+@keyframes bajar{
+	from{
+		top: -100%;
+	}
+	to{
+		top: 0%;
+	}
+}
+@-webkit-keyframes bajar{
+	from{
+		-webkit-top: -100%;
+	}
+	to{
+		-webkit-top: 0%;
+	}
+}
+
+.subir{
+	animation-duration:0.5s;
+	animation-name: subir;
+	animation-timing-function: linear;
+	-webkit-animation-duration:0.5s;
+	-webkit-animation-name: subir;
+	-webkit-animation-timing-function: linear;
+}
+
+@keyframes subir{
+	from{
+		top: 0%;
+	}
+	to{
+		top: -100%;
+	}
+}
+
+@-webkit-keyframes subir{
+	from{
+		-webkit-top: 0%;
+	}
+	to{
+		-webkit-top: -100%;
+	}
+}
+
+
+
+@font-face {
+  font-family: 'GillSans';
+  src: url('fuentes/GillSansStd.eot?#iefix') format('embedded-opentype'),  url('fuentes/GillSansStd.otf')  format('opentype'),
+	     url('fuentes/GillSansStd.woff') format('woff'), url('fuentes/GillSansStd.ttf')  format('truetype'), url('fuentes/GillSansStd.svg#GillSansStd') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

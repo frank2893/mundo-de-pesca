@@ -1,0 +1,145 @@
+*{
+	overflow: hidden;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+
+html, body {
+	height: 100%;
+	width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#imagen_aviso{
+	background-image: url('imagenes/movil_aviso.png');
+	background-size: 100%;
+	width: 80%;
+	height: 180%;
+	position: absolute;
+	left: 10%;
+	top: -65%;
+	z-index: 8;
+}
+
+#aviso_movil{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	display: none;
+}
+
+#logo1{
+	position: absolute;
+	background-image: url('imagenes/juego/logo1.png');
+	background-size: 100% 100%;
+}
+#logo2{
+	position: absolute;
+	background-image: url('imagenes/juego/logo2.png');
+	background-size: 100% 100%;
+}
+
+#btnFacebook{
+	position: absolute;	
+	background-image: url('imagenes/inicio/logoFB.png');
+	background-size: 100% 100%;
+}
+#btnInstagram{
+	position: absolute;
+	background-image: url('imagenes/inicio/logoIN.png');
+	background-size: 100% 100%;
+}
+#btnTwitter{
+	position: absolute;
+	background-image: url('imagenes/inicio/logoTW.png');
+	background-size: 100% 100%;
+}
+
+#titulo{
+	position: absolute;
+	background-image: url('imagenes/ranking/titulo.png');
+	background-size: 100% 100%;
+}
+
+#lateral_izq{
+	position: absolute;
+	background-image: url('imagenes/ranking/fondo.png');
+	background-size: 100% 100%;
+}/*
+#lateral_der{
+	position: absolute;
+	background-image: url('imagenes/ranking/lateral_der.png');
+	background-size: 100% 100%;
+}
+
+#fondo_tabla{
+	position: absolute;
+	background-image: url('imagenes/ranking/fondo_tabla');
+	background-size: 100% 100%;
+}*/
+
+#ganadores th{
+	width: 40%;
+	margin-bottom: 2%;
+	text-align: center;
+}
+
+#ganadores td{
+	max-width: 30%;
+	margin: 10%;
+	padding: 1% 0% 1% 0%;
+	text-align: center;
+}
+
+#tabla{
+	position: absolute;
+	font-family: GillSans, helvetica;
+	color: #245381;
+}
+
+#texto{
+	position: absolute;
+	font-family: GillSans, helvetica;
+	color: #245381;
+}
+
+#btnJugar{
+	position: absolute;
+	background-image: url('imagenes/inicio/btnJugar.png');
+	background-size: 100% 100%;
+}
+
+#btnRegresar{
+	position: absolute;
+	background-image: url('imagenes/ranking/btnRegresar.png');
+	background-size: 100% 100%;
+}
+
+#btnTwitter:hover,#btnFacebook:hover,#btnInstagram:hover,
+#logo1:hover,#logo2:hover, #btnJugar:hover,#btnRegresar:hover{
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+#btnMusica{
+	position: absolute;
+	background-image: url('imagenes/juego/musicastop.png');
+	background-size: 100% 100%;
+}
+
+#btnMusica:hover{
+	cursor: pointer;
+}
+
+@font-face{
+	font-family: 'GillSans';
+	src: url('fuentes/GillSans.ttc');
+}
